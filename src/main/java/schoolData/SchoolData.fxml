@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="630.0" prefWidth="1150.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="schoolData.SchoolDataController">
+   <children>
+      <AnchorPane layoutX="250.0" layoutY="30.0" prefHeight="600.0" prefWidth="900.0">
+         <children>
+            <ImageView fx:id="background_image" fitHeight="600.0" fitWidth="900.0">
+               <image>
+                  <Image url="@Background_Image.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="logo" fitHeight="120.0" fitWidth="200.0" layoutX="350.0" layoutY="30.0">
+               <image>
+                  <Image url="@School_Management_System_Logo.png" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutX="125.0" layoutY="250.0" prefHeight="150.0" prefWidth="150.0" styleClass="anchor-pane-dropshadow" stylesheets="@../StyleSheet.css">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="110.0" prefWidth="130.0" text="Total Students">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="totalStudents" alignment="CENTER" contentDisplay="CENTER" layoutX="5.0" layoutY="35.0" prefHeight="50.0" prefWidth="140.0">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+            <AnchorPane layoutX="375.0" layoutY="250.0" prefHeight="150.0" prefWidth="150.0" styleClass="anchor-pane-dropshadow" stylesheets="@../StyleSheet.css">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="110.0" prefWidth="130.0" text="Total Teachers">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="totalTeachers" alignment="CENTER" contentDisplay="CENTER" layoutX="5.0" layoutY="35.0" prefHeight="50.0" prefWidth="140.0">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="625.0" layoutY="250.0" prefHeight="150.0" prefWidth="150.0" styleClass="anchor-pane-dropshadow" stylesheets="@../StyleSheet.css">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="110.0" prefWidth="130.0" text="Total Fees">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="totalFees" alignment="CENTER" contentDisplay="CENTER" layoutX="5.0" layoutY="35.0" prefHeight="50.0" prefWidth="140.0">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Button fx:id="updateTotalFees" alignment="BOTTOM_CENTER" contentDisplay="TOP" layoutX="350.0" layoutY="440.0" mnemonicParsing="false" onAction="#updateTotalFees" prefHeight="120.0" prefWidth="200.0" styleClass="button1" stylesheets="@../StyleSheet.css" text="Update Total Fees" textFill="WHITE">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="80.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Fees_Button_Image.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label layoutX="365.0" layoutY="180.0" text="School Data" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="30.0" prefHeight="600.0" prefWidth="250.0" styleClass="anchor-pane-background" stylesheets="@../StyleSheet.css">
+         <children>
+            <Button fx:id="logout" layoutY="330.0" mnemonicParsing="false" onAction="#logout" prefHeight="50.0" prefWidth="250.0" styleClass="button1" stylesheets="@../StyleSheet.css" text="Logout" textFill="WHITE">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="back" layoutY="433.0" mnemonicParsing="false" onAction="#back" prefHeight="50.0" prefWidth="250.0" styleClass="button1" stylesheets="@../StyleSheet.css" text="Back" textFill="WHITE">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="18.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="back_button_image1" fitHeight="34.0" fitWidth="38.0" layoutX="25.0" layoutY="441.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Back_Button_Image.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="back_button_image" fitHeight="34.0" fitWidth="38.0" layoutX="25.0" layoutY="338.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Logout_Button_Image.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="30.0" prefWidth="1150.0">
+         <children>
+            <Button fx:id="close" layoutX="1100.0" mnemonicParsing="false" onAction="#close" prefHeight="29.0" prefWidth="50.0" styleClass="close-button" stylesheets="@../StyleSheet.css">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Close_Button_Image.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
